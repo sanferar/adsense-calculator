@@ -105,3 +105,243 @@ a {
     color-scheme: dark;
   }
 }
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+.contenedor__padre__info{
+  display: flex;
+justify-content: center;
+align-items: center;
+max-width: 1200px;
+margin: 24px;
+padding: 24px;
+gap: 30px;
+box-sizing: border-box;
+background-color: rgb(52, 52, 52);
+border-radius: 4px;
+}
+
+.contenedor__padre{
+display: flex;
+justify-content: center;
+align-items: center;
+max-width: 1200px;
+margin: 24px;
+padding: 24px;
+gap: 30px;
+box-sizing: border-box;
+}
+
+.contenedor__padre__inputs{
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-flow: column;
+  width: 500px;
+  height: 400px;
+  padding: 30px;
+  gap:30px;
+  font-size: 1.3rem;
+}
+
+.contenedor__padre__result{
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-flow: column;
+  width: 500px;
+  height: 400px;
+  padding: 30px;
+  gap:30px;
+  font-size: 1.3rem;
+}
+
+.contenedor__resultado{
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-flow: column;
+  gap: 10px;
+}
+
+.contenedor__resultado__cifraysimbolo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row;
+    font-size: 5rem;
+}
+
+.cifra__resultado{
+  font-size: 4rem;
+}
+
+.simbolo__resultado{
+  font-size: 2rem;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%; /* Full-width */
+  height: 10px; /* Specified height */
+  background: #ececec; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */ /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  border-radius: 4px
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #16faa6; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+/* MEdia query */
+
+@media (max-width: 500px) {
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    min-height: 100vh;
+  }
+  
+  .contenedor__padre__info{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 24px;
+  padding: 24px;
+  gap: 30px;
+  box-sizing: border-box;
+  background-color: rgb(52, 52, 52);
+  border-radius: 4px;
+  }
+  
+  .contenedor__padre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 24px;
+  padding: 24px;
+  gap: 30px;
+  box-sizing: border-box;
+  }
+  
+  .contenedor__padre__inputs{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-flow: column;
+    width: 300px;
+    height: 200px;
+    padding: 30px;
+    gap:30px;
+    font-size: 1.3rem;
+  }
+  
+  .contenedor__padre__result{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-flow: column;
+    width: 300px;
+    height: 150px;
+    padding: 30px;
+    gap:30px;
+    font-size: 1.3rem;
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+  }
+  
+  .contenedor__resultado{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-flow: column;
+    gap: 10px;
+  }
+  
+  .contenedor__resultado__cifraysimbolo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row;
+  }
+  
+  .cifra__resultado{
+    font-size: 2rem;
+  }
+  
+  .simbolo__resultado{
+    font-size: 1rem;
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    -moz-appearance: none;
+         appearance: none;
+    width: 100%; /* Full-width */
+    height: 10px; /* Specified height */
+    background: #ececec; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */ /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border-radius: 4px
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #16faa6; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 50%;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+}
