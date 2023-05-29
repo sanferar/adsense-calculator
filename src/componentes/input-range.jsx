@@ -6,6 +6,7 @@ import React from "react";
 export function InputRange({ valorSeleccionado, handleValorChange }) {
   return (
     <>
+      <p>Impresiones: {valorSeleccionado.toLocaleString()} Impresiones</p>
       <input
         className="slider"
         type="range"
@@ -15,7 +16,6 @@ export function InputRange({ valorSeleccionado, handleValorChange }) {
         value={valorSeleccionado}
         onChange={handleValorChange}
       />
-      <p>Impresiones: {valorSeleccionado.toLocaleString()} Impresiones</p>
     </>
   );
 }

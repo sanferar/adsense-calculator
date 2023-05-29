@@ -13,6 +13,7 @@ export function ContenedorInfo() {
       <h2>
         Estimador de ganancias por mil impresiones con Adsense
       </h2>
+      <p>Esta calculadora hace una estimación de los ingresos que podrías obtener en Adsense teniendo en cuenta tu RPM y las impresiones que crees que puedes llegar a conseguir. </p>
     </div>
   )
 }

@@ -4,6 +4,7 @@ import React from "react";
 export function InputNumber({ valorSeleccionado, handleValorChange }) {
   return (
     <>
+      <p>RPM: {valorSeleccionado}€</p>
       <input
         className='slider'
         type="range"
@@ -13,7 +14,6 @@ export function InputNumber({ valorSeleccionado, handleValorChange }) {
         value={valorSeleccionado}
         onChange={handleValorChange}
       />
-      <p>RPM: {valorSeleccionado}€</p>
     </>
   );
 }
