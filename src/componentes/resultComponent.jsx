@@ -7,7 +7,7 @@ export function ResultComponent({valorNumber, valorRange}){
     useEffect(() => {
       const calcularResultado = () => {
         const resultado = valorNumber * (valorRange/1000);
-        const resultadoPuntuado = resultado.toLocaleString()
+        const resultadoPuntuado = resultado.toFixed(2)
         setResultado(resultadoPuntuado);
       };
     
