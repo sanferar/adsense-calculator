@@ -4,7 +4,7 @@ import { InputNumber } from "./input-number";
 import { InputRange } from "./input-range";
 import  { ResultComponent }  from "./resultComponent.jsx";
 import { Nunito } from 'next/font/google';
- 
+
 const nunito = Nunito({
   weight: '400',
   subsets: ['latin'],
@@ -12,8 +12,8 @@ const nunito = Nunito({
 
 export function ContenedorPadre() {
 
-  const [valorNumber, setValorNumber] = useState(0.001);
-  const [valorRange, setValorRange] = useState(100);
+  const [valorNumber, setValorNumber] = useState(0);
+  const [valorRange, setValorRange] = useState(1000);
 
   const handleNumberChange = (event) => {
     const valor = parseFloat(event.target.value);
@@ -28,11 +28,20 @@ export function ContenedorPadre() {
   return (
     <div className={`contenedor__padre ${nunito.className}`}>
       <div className="contenedor__padre__result">
-        <ResultComponent valorNumber={valorNumber} valorRange={valorRange} />
+        <ResultComponent 
+          valorNumber={valorNumber} 
+          valorRange={valorRange} 
+        />
       </div>
       <div className="contenedor__padre__inputs">
-        <InputNumber valorSeleccionado={valorNumber} handleValorChange={handleNumberChange} />
-        <InputRange valorSeleccionado={valorRange} handleValorChange={handleRangeChange} />
+        <InputNumber 
+        valorSeleccionado={valorNumber} 
+        handleValorChange={handleNumberChange} 
+        />
+        <InputRange 
+        valorSeleccionado={valorRange} 
+        handleValorChange={handleRangeChange} 
+        />
       </div>
     </div>
   );

@@ -10,9 +10,9 @@ export function InputRange({ valorSeleccionado, handleValorChange }) {
       <input
         className="slider"
         type="range"
-        min="100"
-        max="1000000"
-        step='100'
+        min="1000"
+        max="100000"
+        step='1000'
         value={valorSeleccionado}
         onChange={handleValorChange}
       />

@@ -1,6 +1,5 @@
 import React from "react";
 
-
 export function InputNumber({ valorSeleccionado, handleValorChange }) {
   return (
     <>
@@ -8,9 +7,9 @@ export function InputNumber({ valorSeleccionado, handleValorChange }) {
       <input
         className='slider'
         type="range"
-        min="0.001"
-        max="14"
-        step="0.001"
+        min="0"
+        max="1"
+        step="0.2"
         value={valorSeleccionado}
         onChange={handleValorChange}
       />

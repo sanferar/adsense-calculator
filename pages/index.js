@@ -4,8 +4,6 @@ import { ContenedorPadre } from '@/src/componentes/contenedor-padre'
 import { ContenedorInfo } from '@/src/componentes/contenedorInfo'
 
 
-
-
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
