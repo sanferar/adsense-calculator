@@ -34,13 +34,13 @@ a {
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  min-height: 100vh;
+
   background-color: #0b0b0b;
   color: #eaeaea;
 }
 
 .contenedor__padre__info{
-  display: flex;
+display: flex;
 justify-content: center;
 align-items: center;
 max-width: 1200px;
@@ -153,7 +153,7 @@ box-sizing: border-box;
   cursor: pointer; /* Cursor on hover */
 }
 
-/* MEdia query */
+/* Media query */
 
 @media (max-width: 500px) {
   .main{
@@ -209,6 +209,7 @@ box-sizing: border-box;
     width: 350px;
     height: 150px;
     padding: 30px;
+    margin-bottom: 24px;
     gap:30px;
     font-size: 1.3rem;
     border-radius: 10px;

@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react";
 
-export function ResultComponent({valorNumber, valorRange}){
+export function ResultComponent({valorNumber, valorRange, valorWebs}){
 
     const [resultado, setResultado] = useState(0);
     
     useEffect(() => {
       const calcularResultado = () => {
-        const resultado = valorNumber * (valorRange/1000);
+        const resultado = ((valorNumber * (valorRange/1000)) * valorWebs);
         const resultadoPuntuado = resultado.toFixed(2)
         setResultado(resultadoPuntuado);
       };
     
       calcularResultado();
-    }, [valorNumber, valorRange]);
+    }, [valorNumber, valorRange, valorWebs]);
     
     return (
       <div className="contenedor__resultado">
