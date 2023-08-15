@@ -8,7 +8,7 @@ export function InputNumber({ valorSeleccionado, handleValorChange }) {
         className='slider'
         type="range"
         min="0"
-        max="1"
+        max="2"
         step="0.2"
         value={valorSeleccionado}
         onChange={handleValorChange}

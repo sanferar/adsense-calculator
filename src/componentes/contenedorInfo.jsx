@@ -14,10 +14,10 @@ export function ContenedorInfo() {
         Estimador de ganancias por mil impresiones con Adsense
       </h2>
       <p>
-        Esta calculadora hace una estimación de los ingresos que podrías obtener en Adsense teniendo en cuenta tu RPM y las impresiones que crees que puedes llegar a conseguir.
+        Esta calculadora hace una estimación de los ingresos que podrías obtener en Adsense teniendo en cuenta tu RPM, las impresiones que crees que puedes llegar a conseguir y el número de web que puedes tener.
       </p>
       <p>
-        Fórmula: RPM * (impresiones/1000)
+        Fórmula: (RPM * (impresiones/1000)) * Nº de Webs
       </p>
     </div>
   )
